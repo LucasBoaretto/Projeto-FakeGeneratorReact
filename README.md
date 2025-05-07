@@ -13,4 +13,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Check the project here
 
-<a src="https://projeto-fake-generator-react.vercel.app/" style="text-decoration:none">Click Here</a>
+<a href="https://projeto-fake-generator-react.vercel.app/" style="text-decoration:none">Click Here</a>
