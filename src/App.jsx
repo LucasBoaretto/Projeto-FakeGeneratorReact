@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import InputText from "./components/InputText";
 import MenuHome from "./components/MenuHome";
 import NavBar from "./components/NavBar";
+import NavItens from "./components/NavItens";
 
 function App() {
   return (
