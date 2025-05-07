@@ -1,35 +1,16 @@
 import "./App.css";
 import Header from "./components/Header";
-import InputText from "./components/InputText";
-import MenuHome from "./components/MenuHome";
+import Main from "./components/Main";
 import NavBar from "./components/NavBar";
-import NavItens from "./components/NavItens";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <NavBar />
-      <main>
-        <h2>Conversor de Texto</h2>
-        <p>
-          Insira o seu texto abaixo e escolha uma das opções disponíveis para
-          formatar.
-        </p>
-        <InputText />
-        <p>0/100</p>
-        <MenuHome />
-        <textarea></textarea>
-      </main>
-      <footer>
-        <div>
-          <p>
-            ©2025 Gerador<span>Lucas Boaretto</span>
-          </p>
-        </div>
-      </footer>
+      <Main />
+      <Footer />
     </div>
   );
 }
