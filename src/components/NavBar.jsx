@@ -1,4 +1,5 @@
 import {
+  ChartNoAxesCombinedIcon,
   Contact,
   House,
   Library,
@@ -7,6 +8,7 @@ import {
 } from "lucide-react";
 import NavItens from "./NavItens";
 import NavItensContainer from "./NavItensContainer";
+import { LayoutDashboard } from "lucide";
 
 function NavBar() {
   return (
@@ -34,6 +36,11 @@ function NavBar() {
       <NavItensContainer>
         <LogInIcon color="white" size={20} />
         <NavItens>Cadastro</NavItens>
+      </NavItensContainer>
+
+      <NavItensContainer>
+        <ChartNoAxesCombinedIcon color="white" size={20}/>
+        <NavItens>Dashboard</NavItens>
       </NavItensContainer>
     </nav>
   );
