@@ -7,13 +7,13 @@ import DashboardPage from "./pages/DashboardPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <App />,
   },
   {
     path: "/dashboard",
-    element: <DashboardPage />
-  }
+    element: <DashboardPage />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
