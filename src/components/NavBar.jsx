@@ -8,15 +8,17 @@ import {
 } from "lucide-react";
 import NavItens from "./NavItens";
 import NavItensContainer from "./NavItensContainer";
-import { LayoutDashboard } from "lucide";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <nav className="bg-cor3 flex row flex-nowrap">
-      <NavItensContainer>
-        <House color="white" size={20} />
-        <NavItens>Home</NavItens>
-      </NavItensContainer>
+      <Link to="/home">
+        <NavItensContainer>
+          <House color="white" size={20} />
+          <NavItens>Home</NavItens>
+        </NavItensContainer>
+      </Link>
 
       <NavItensContainer>
         <Library color="white" size={20} />
@@ -38,10 +40,12 @@ function NavBar() {
         <NavItens>Cadastro</NavItens>
       </NavItensContainer>
 
-      <NavItensContainer>
-        <ChartNoAxesCombinedIcon color="white" size={20}/>
-        <NavItens>Dashboard</NavItens>
-      </NavItensContainer>
+      <Link to="/dashboard">
+        <NavItensContainer>
+          <ChartNoAxesCombinedIcon color="white" size={20} />
+          <NavItens>Dashboard</NavItens>
+        </NavItensContainer>
+      </Link>
     </nav>
   );
 }
