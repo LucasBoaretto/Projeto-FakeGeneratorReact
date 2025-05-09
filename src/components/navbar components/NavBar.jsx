@@ -20,10 +20,12 @@ function NavBar() {
         </NavItensContainer>
       </Link>
 
-      <NavItensContainer>
-        <Library color="white" size={20} />
-        <NavItens>Biblioteca</NavItens>
-      </NavItensContainer>
+      <Link to="/library">
+        <NavItensContainer>
+          <Library color="white" size={20} />
+          <NavItens>Biblioteca</NavItens>
+        </NavItensContainer>
+      </Link>
 
       <NavItensContainer>
         <MessageCircleQuestion color="white" size={20} />

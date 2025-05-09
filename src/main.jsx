@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage.jsx";
+import LibraryPage from "./pages/LibraryPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <DashboardPage />,
   },
+  {
+    path: "/library",
+    element: <LibraryPage />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
