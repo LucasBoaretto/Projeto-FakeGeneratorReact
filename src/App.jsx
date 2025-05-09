@@ -10,7 +10,7 @@ import TextAreaHome from "./components/TextAreaHome";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col">
       <Header />
       <NavBar />
       <Main>
