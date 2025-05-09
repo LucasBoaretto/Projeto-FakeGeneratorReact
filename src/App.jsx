@@ -1,12 +1,12 @@
 import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navbar components/NavBar";
 import Footer from "./components/Footer";
-import InputText from "./components/InputText";
-import Contador from "./components/Contador";
-import MenuHome from "./components/MenuHome";
-import TextAreaHome from "./components/TextAreaHome";
+import InputText from "./components/home components/InputText";
+import Contador from "./components/home components/Contador";
+import MenuHome from "./components/home components/MenuHome";
+import TextAreaHome from "./components/home components/TextAreaHome";
 
 function App() {
   return (

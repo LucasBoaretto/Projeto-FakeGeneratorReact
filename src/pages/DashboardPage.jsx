@@ -1,8 +1,8 @@
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/dashboard components/Dashboard";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/navbar components/NavBar";
 
 function DashboardPage() {
   return (
