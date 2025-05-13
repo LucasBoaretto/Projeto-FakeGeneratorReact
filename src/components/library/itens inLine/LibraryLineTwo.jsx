@@ -2,28 +2,28 @@ import ColDiv from "../ColDiv";
 import LabelForButton from "../LabelForButton";
 import LineDiv from "../LineDiv";
 
-function LineThree() {
+function LibraryLineTwo() {
   return (
     <div>
       <LineDiv>
         <ColDiv>
-          <LabelForButton>Mail Button:</LabelForButton>
+          <LabelForButton>Icon Button:</LabelForButton>
         </ColDiv>
         <ColDiv>
-          <LabelForButton>Text Button:</LabelForButton>
+          <LabelForButton>Social Media Button:</LabelForButton>
         </ColDiv>
         <ColDiv>
-          <LabelForButton>Next Button:</LabelForButton>
+          <LabelForButton>Check:</LabelForButton>
         </ColDiv>
         <ColDiv>
-          <LabelForButton>Prev Button:</LabelForButton>
+          <LabelForButton>Loading Button:</LabelForButton>
         </ColDiv>
         <ColDiv>
-          <LabelForButton>Arrow Button:</LabelForButton>
+          <LabelForButton>Download Button:</LabelForButton>
         </ColDiv>
       </LineDiv>
     </div>
   );
 }
 
-export default LineThree;
+export default LibraryLineTwo;

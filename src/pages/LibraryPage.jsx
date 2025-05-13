@@ -1,11 +1,11 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import LineFour from "../components/library components/itens inLine/LineFour";
-import LineOne from "../components/library components/itens inLine/LineOne";
-import LineThree from "../components/library components/itens inLine/LineThree";
-import LineTwo from "../components/library components/itens inLine/LineTwo";
+import LibraryLineFour from "../components/library/itens inLine/LibraryLineFour";
+import LibraryLineOne from "../components/library/itens inLine/LibraryLineOne";
+import LibraryLineThree from "../components/library/itens inLine/LibraryLineThree";
+import LibraryLineTwo from "../components/library/itens inLine/LibraryLineTwo";
 import Main from "../components/Main";
-import NavBar from "../components/navbar components/NavBar";
+import NavBar from "../components/navbar/NavBar";
 
 function LibraryPage() {
   return (
@@ -13,10 +13,10 @@ function LibraryPage() {
       <Header />
       <NavBar />
       <Main>
-        <LineOne />
-        <LineTwo />
-        <LineThree />
-        <LineFour />
+        <LibraryLineOne />
+        <LibraryLineTwo />
+        <LibraryLineThree />
+        <LibraryLineFour />
       </Main>
       <Footer />
     </div>

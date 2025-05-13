@@ -2,7 +2,7 @@ import ColDiv from "../ColDiv";
 import LabelForButton from "../LabelForButton";
 import LineDiv from "../LineDiv";
 
-function LineFour() {
+function LibraryLineFour() {
   return (
     <div>
       <LineDiv>
@@ -26,4 +26,4 @@ function LineFour() {
   );
 }
 
-export default LineFour;
+export default LibraryLineFour;
