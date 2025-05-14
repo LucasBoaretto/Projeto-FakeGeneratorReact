@@ -11,7 +11,7 @@ function Chart03() {
     var option;
     option = {
       title: {
-        text: "Nightingale Chart",
+        text: "Chamados x Atendente",
         subtext: "Fake Data",
         left: "center",
       },
@@ -22,29 +22,20 @@ function Chart03() {
       legend: {
         left: "center",
         top: "bottom",
-        data: [
-          "rose1",
-          "rose2",
-          "rose3",
-          "rose4",
-          "rose5",
-          "rose6",
-          "rose7",
-          "rose8",
-        ],
       },
       toolbox: {
         show: true,
         feature: {
           mark: { show: true },
           dataView: { show: true, readOnly: false },
-          restore: { show: true },
+          restore: { show: false },
           saveAsImage: { show: true },
+          
         },
       },
       series: [
         {
-          name: "Radius Mode",
+          name: "Atendimentos",
           type: "pie",
           radius: [20, 140],
           center: ["50%", "50%"],
@@ -61,14 +52,14 @@ function Chart03() {
             },
           },
           data: [
-            { value: 40, name: "rose 1" },
-            { value: 33, name: "rose 2" },
-            { value: 28, name: "rose 3" },
-            { value: 22, name: "rose 4" },
-            { value: 20, name: "rose 5" },
-            { value: 15, name: "rose 6" },
-            { value: 12, name: "rose 7" },
-            { value: 10, name: "rose 8" },
+            { value: 7, name: "Fulano 1" },
+            { value: 4, name: "Fulano 2" },
+            { value: 8, name: "Fulano 3" },
+            { value: 15, name: "Fulano 4" },
+            { value: 13, name: "Fulano 5" },
+            { value: 18, name: "Fulano 6" },
+            { value: 3, name: "Fulano 7" },
+            { value: 11, name: "Fulano 8" },
           ],
         },
       ],

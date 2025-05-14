@@ -2,6 +2,16 @@ import { useEffect } from "react";
 import * as echarts from "echarts";
 
 function Chart02() {
+  function randomNumberVectorGenerator() {
+    return Math.random() * (20 - 1) + 1;
+  }
+
+  let arr = [];
+
+  for (let i = 0; i <= 12; i++) {
+    arr[i] = parseInt(randomNumberVectorGenerator());
+  }
+
   useEffect(() => {
     var chartDom = document.getElementById("chart02");
     var myChart = echarts.init(chartDom);
@@ -16,6 +26,10 @@ function Chart02() {
           type: "shadow",
         },
       },
+      title: {
+        text: "Users x Month",
+        left: "center",
+      },
       grid: {
         left: "3%",
         right: "4%",
@@ -25,7 +39,20 @@ function Chart02() {
       xAxis: [
         {
           type: "category",
-          data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          data: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
           axisTick: {
             alignWithLabel: true,
           },
@@ -41,7 +68,7 @@ function Chart02() {
           name: "Direct",
           type: "bar",
           barWidth: "60%",
-          data: [10, 52, 200, 334, 390, 330, 220],
+          data: arr,
         },
       ],
     };
