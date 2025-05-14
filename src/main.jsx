@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import LibraryPage from "./pages/LibraryPage.jsx";
+import RegisterPage from "./pages/RegisterPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/library",
-    element: <LibraryPage />
-  }
+    element: <LibraryPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

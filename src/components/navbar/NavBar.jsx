@@ -37,10 +37,12 @@ function NavBar() {
         <NavItens>Contato</NavItens>
       </NavItensContainer>
 
-      <NavItensContainer>
-        <LogInIcon color="white" size={20} />
-        <NavItens>Cadastro</NavItens>
-      </NavItensContainer>
+      <Link to="/register">
+        <NavItensContainer>
+          <LogInIcon color="white" size={20} />
+          <NavItens>Cadastro</NavItens>
+        </NavItensContainer>
+      </Link>
 
       <Link to="/dashboard">
         <NavItensContainer>
