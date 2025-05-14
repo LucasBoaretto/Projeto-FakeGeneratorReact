@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <nav className="bg-cor3 flex row flex-wrap">
-      <Link to="/">
+      <Link to="/home">
         <NavItensContainer>
           <House color="white" size={20} />
           <NavItens>Home</NavItens>
@@ -27,15 +27,19 @@ function NavBar() {
         </NavItensContainer>
       </Link>
 
-      <NavItensContainer>
-        <MessageCircleQuestion color="white" size={20} />
-        <NavItens>FAQ</NavItens>
-      </NavItensContainer>
+      <Link to="/FAQ">
+        <NavItensContainer>
+          <MessageCircleQuestion color="white" size={20} />
+          <NavItens>FAQ</NavItens>
+        </NavItensContainer>
+      </Link>
 
-      <NavItensContainer>
-        <Contact color="white" size={20} />
-        <NavItens>Contato</NavItens>
-      </NavItensContainer>
+      <Link to="/contact">
+        <NavItensContainer>
+          <Contact color="white" size={20} />
+          <NavItens>Contato</NavItens>
+        </NavItensContainer>
+      </Link>
 
       <Link to="/register">
         <NavItensContainer>
