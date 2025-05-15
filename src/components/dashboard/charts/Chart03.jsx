@@ -19,18 +19,13 @@ function Chart03() {
         trigger: "item",
         formatter: "{a} <br/>{b} : {c} ({d}%)",
       },
-      legend: {
-        left: "center",
-        top: "bottom",
-      },
       toolbox: {
         show: true,
         feature: {
           mark: { show: true },
-          dataView: { show: true, readOnly: false },
+          dataView: { show: true, readOnly: true },
           restore: { show: false },
           saveAsImage: { show: true },
-          
         },
       },
       series: [
@@ -39,7 +34,7 @@ function Chart03() {
           type: "pie",
           radius: [20, 140],
           center: ["50%", "50%"],
-          roseType: "radius",
+          // roseType: "radius",
           itemStyle: {
             borderRadius: 5,
           },
