@@ -1,5 +1,5 @@
 function LabelForButton(props) {
-  return <label>{props.children}</label>;
+  return <label className="pb-2.5">{props.children}</label>;
 }
 
 export default LabelForButton;

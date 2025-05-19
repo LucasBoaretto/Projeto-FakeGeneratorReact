@@ -1,5 +1,5 @@
 function ColDiv(props) {
-  return <div className="inline-block basis-auto">{props.children}</div>;
+  return <div className="flex flex-col basis-auto items-center">{props.children}</div>;
 }
 
 export default ColDiv;
