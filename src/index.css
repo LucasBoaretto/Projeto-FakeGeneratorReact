@@ -12,3 +12,46 @@
   --color-cor8: #2a3747;
   --font-WorkSans: "Work Sans", sans-serif;
 }
+
+:root {
+  --cor3: #219781;
+}
+
+/*Adicionado a estilização do botão de animação aqui para não precisar criar variável com o content no js do tailwind*/
+
+#animatedButton {
+  background-color: var(--cor3);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 12px 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#animatedButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#animatedButton span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#animatedButton:hover span {
+  padding-right: 25px;
+}
+
+#animatedButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
