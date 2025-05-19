@@ -3,62 +3,62 @@
     {
       "id": 1,
       "month": "Jan",
-      "users": 22
+      "users": 10
     },
     {
       "id": 2,
       "month": "Feb",
-      "users": 22
+      "users": 5
     },
     {
       "id": 3,
       "month": "Mar",
-      "users": 22
+      "users": 12
     },
     {
       "id": 4,
       "month": "Apr",
-      "users": 22
+      "users": 17
     },
     {
       "id": 5,
       "month": "May",
-      "users": 22
+      "users": 2
     },
     {
       "id": 6,
       "month": "Jun",
-      "users": 22
+      "users": 4
     },
     {
       "id": 7,
       "month": "Jul",
-      "users": 22
+      "users": 9
     },
     {
       "id": 8,
       "month": "Aug",
-      "users": 22
+      "users": 13
     },
     {
       "id": 9,
       "month": "Sep",
-      "users": 22
+      "users": 10
     },
     {
       "id": 10,
-      "month": "Jan",
-      "users": 22
+      "month": "Oct",
+      "users": 6
     },
     {
       "id": 11,
-      "month": "Jan",
-      "users": 22
+      "month": "Nov",
+      "users": 9
     },
     {
       "id": 12,
-      "month": "Jan",
-      "users": 22
+      "month": "Dec",
+      "users": 1
     }
   ]
 }

@@ -15,16 +15,16 @@ function Chart02() {
   const [data, setData] = useState({ month: [], users: [] });
 
   useEffect(() => {
-    // Faz a requisição ao backend
     fetch("http://localhost:3000/usersxmonth")
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => {
+        // data é um array, então usamos .map()
         setData({
-          month: data.month,
-          users: data.users,
+          month: data.map((item) => item.month),
+          users: data.map((item) => item.users),
         });
       })
-      .catch((error) => console.error("Erro ao buscar dados:", error));
+      .catch((err) => console.error("Erro ao buscar dados:", err));
   }, []);
 
   useEffect(() => {
