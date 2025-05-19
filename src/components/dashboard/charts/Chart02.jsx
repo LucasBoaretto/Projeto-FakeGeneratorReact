@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import * as echarts from "echarts";
 
 function Chart02() {
@@ -12,14 +12,26 @@ function Chart02() {
     arr[i] = parseInt(randomNumberVectorGenerator());
   }
 
+  const [data, setData] = useState({ month: [], users: [] });
+
   useEffect(() => {
-    var chartDom = document.getElementById("chart02");
-    var myChart = echarts.init(chartDom);
-    window.addEventListener("resize", () => {
-      myChart.resize();
-    });
-    var option;
-    option = {
+    // Faz a requisição ao backend
+    fetch("http://localhost:3000/usersxmonth")
+      .then((response) => response.json())
+      .then((data) => {
+        setData({
+          month: data.month,
+          users: data.users,
+        });
+      })
+      .catch((error) => console.error("Erro ao buscar dados:", error));
+  }, []);
+
+  useEffect(() => {
+    const chartDom = document.getElementById("chart02");
+    const myChart = echarts.init(chartDom);
+
+    const option = {
       tooltip: {
         trigger: "axis",
         axisPointer: {
@@ -39,20 +51,7 @@ function Chart02() {
       xAxis: [
         {
           type: "category",
-          data: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-          ],
+          data: data.month,
           axisTick: {
             alignWithLabel: true,
           },
@@ -65,15 +64,24 @@ function Chart02() {
       ],
       series: [
         {
-          name: "Direct",
+          name: "Users",
           type: "bar",
           barWidth: "60%",
-          data: arr,
+          data: data.users,
         },
       ],
     };
-    option && myChart.setOption(option);
-  });
+
+    myChart.setOption(option);
+    window.addEventListener("resize", myChart.resize);
+
+    return () => {
+      window.removeEventListener("resize", myChart.resize);
+      myChart.dispose();
+    };
+  }, [data]);
+
+  console.log(data);
 
   return (
     <div className="h-100 w-full">

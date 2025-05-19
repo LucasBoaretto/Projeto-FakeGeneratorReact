@@ -47,17 +47,17 @@
     },
     {
       "id": 10,
-      "month": "Oct",
+      "month": "Jan",
       "users": 22
     },
     {
       "id": 11,
-      "month": "Nov",
+      "month": "Jan",
       "users": 22
     },
     {
       "id": 12,
-      "month": "Dec",
+      "month": "Jan",
       "users": 22
     }
   ]
