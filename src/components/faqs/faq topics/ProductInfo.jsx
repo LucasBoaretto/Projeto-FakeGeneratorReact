@@ -1,8 +1,7 @@
 import { PlusIcon } from "lucide-react";
-import FaqItem from "../faqItem";
+import FaqItem from "../FaqItem";
 import FaqQuestion from "../FaqQuestion";
 import FaqAnswer from "../FaqAnswer";
-import FaqLink from "../FaqLinks";
 import FaqQuestionBox from "../FaqQuestionBox";
 import FaqSections from "../FaqSections";
 import FaqTopic from "../FaqTopic";

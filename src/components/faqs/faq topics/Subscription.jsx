@@ -1,10 +1,10 @@
 import { PlusIcon } from "lucide-react";
-import FaqItem from "../faqItem";
 import FaqQuestion from "../FaqQuestion";
 import FaqQuestionBox from "../FaqQuestionBox";
 import FaqAnswer from "../FaqAnswer";
 import FaqSections from "../FaqSections";
 import FaqTopic from "../FaqTopic";
+import FaqItem from "../FaqItem";
 
 function Subscription() {
   // const subscription = [

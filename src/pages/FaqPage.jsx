@@ -6,8 +6,6 @@ import ProductInfo from "../components/faqs/faq topics/ProductInfo";
 import RewardsProgram from "../components/faqs/faq topics/RewardsProgram";
 import ShipDlvy from "../components/faqs/faq topics/ShipDlvy";
 import Subscription from "../components/faqs/faq topics/Subscription";
-import FaqSections from "../components/faqs/FaqSections";
-import FaqTopic from "../components/faqs/FaqTopic";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Main from "../components/Main";
