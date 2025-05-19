@@ -13,11 +13,11 @@ function LibraryLineFour() {
       <LineDiv>
         <ColDiv>
           <LabelForButton>Other Button 1:</LabelForButton>
-          <OtherOneButton />
+          <OtherOneButton>Teste</OtherOneButton>
         </ColDiv>
         <ColDiv>
           <LabelForButton>Other Button 2:</LabelForButton>
-          <OtherTwoButton />
+          <OtherTwoButton>Teste</OtherTwoButton>
         </ColDiv>
         <ColDiv>
           <LabelForButton>Other Button 3:</LabelForButton>
