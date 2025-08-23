@@ -7,8 +7,12 @@ import InputText from "./components/home/InputText";
 import Contador from "./components/home/Contador";
 import MenuHome from "./components/home/MenuHome";
 import TextAreaHome from "./components/home/TextAreaHome";
+import { useState } from "react";
 
 function App() {
+  const [inputValue, setInputValue] = useState("");
+  const [outputValue, setOutputValue] = useState("");
+
   return (
     <div className="flex flex-col">
       <Header />
@@ -21,10 +25,14 @@ function App() {
           Insira o seu texto abaixo e escolha uma das opções disponíveis para
           formatar.
         </p>
-        <InputText />
-        <Contador />
-        <MenuHome />
-        <TextAreaHome />
+
+        <InputText value={inputValue} setValue={setInputValue} maxLength={100} />
+        <Contador inputValue={inputValue} />
+
+        <MenuHome inputValue={inputValue} setOutputValue={setOutputValue} outputValue={outputValue} />
+
+        <TextAreaHome value={outputValue} />
+
       </Main>
       <Footer />
     </div>

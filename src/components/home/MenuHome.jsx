@@ -1,16 +1,22 @@
+import { buttonConfig } from "./buttonConfig";
 import ButtonHome from "./ButtonHome";
 
-function MenuHome() {
+function MenuHome(props) {
+  const params = {
+    inputValue: props.inputValue,
+    outputValue: props.outputValue,
+    setOutputValue: props.setOutputValue,
+  };
   return (
     <menu className="flex flex-row flex-wrap justify-between">
-      <ButtonHome>TOGGLE CASE</ButtonHome>
-      <ButtonHome>PROPER CASE</ButtonHome>
-      <ButtonHome>SENTENCE CASE</ButtonHome>
-      <ButtonHome>UPPERCASE</ButtonHome>
-      <ButtonHome>LOWERCASE</ButtonHome>
-      <ButtonHome>MIXEDCASE</ButtonHome>
-      <ButtonHome>RESET</ButtonHome>
-      <ButtonHome>COPY RESULT</ButtonHome>
+      {buttonConfig.map((config) => (
+        <ButtonHome
+          key={config.id}
+          config={() => config.action(params)}
+          content={config.content}
+          outputValue={props.outputValue}
+        />
+      ))}
     </menu>
   );
 }
